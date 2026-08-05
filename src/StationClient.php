@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace AzuraCast\Api;
+namespace Pheme\Api;
 
-use AzuraCast\Api\Station;
-use AzuraCast\Api\Dto;
-use AzuraCast\Api\Exception;
+use Pheme\Api\Station;
+use Pheme\Api\Dto;
+use Pheme\Api\Exception;
 use DateTime;
 
 class StationClient extends AbstractStationClient

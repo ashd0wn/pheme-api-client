@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace AzuraCast\Api\Station;
+namespace Pheme\Api\Station;
 
-use AzuraCast\Api\AbstractStationClient;
-use AzuraCast\Api\Dto;
-use AzuraCast\Api\Exception;
+use Pheme\Api\AbstractStationClient;
+use Pheme\Api\Dto;
+use Pheme\Api\Exception;
 
 class StreamersClient extends AbstractStationClient
 {

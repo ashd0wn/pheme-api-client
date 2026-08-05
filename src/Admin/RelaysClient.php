@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace AzuraCast\Api\Admin;
+namespace Pheme\Api\Admin;
 
-use AzuraCast\Api\AbstractClient;
-use AzuraCast\Api\Dto;
-use AzuraCast\Api\Exception;
+use Pheme\Api\AbstractClient;
+use Pheme\Api\Dto;
+use Pheme\Api\Exception;
 
 class RelaysClient extends AbstractClient
 {

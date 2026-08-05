@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AzuraCast\Api\Exception;
+namespace Pheme\Api\Exception;
 
 use Exception;
 

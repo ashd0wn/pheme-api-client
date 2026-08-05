@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace AzuraCast\Api\Admin;
+namespace Pheme\Api\Admin;
 
-use AzuraCast\Api\AbstractClient;
-use AzuraCast\Api\Dto;
-use AzuraCast\Api\Dto\ApiKeyDto;
-use AzuraCast\Api\Dto\RoleDto;
-use AzuraCast\Api\Exception;
+use Pheme\Api\AbstractClient;
+use Pheme\Api\Dto;
+use Pheme\Api\Dto\ApiKeyDto;
+use Pheme\Api\Dto\RoleDto;
+use Pheme\Api\Exception;
 
 class UsersClient extends AbstractClient
 {

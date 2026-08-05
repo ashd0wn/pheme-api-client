@@ -5,7 +5,7 @@ This PHP library provides an API client for the [AzuraCast](https://github.com/A
 It is highly recommended to use the [Composer]() package manager to install this client by running this command:
 
 ```bash
-composer require azuracast/php-api-client
+composer require ashd0wn/pheme-api-client
 ```
 
 # Usage
@@ -15,7 +15,7 @@ composer require azuracast/php-api-client
 
 require __DIR__ . '/vendor/autoload.php';
 
-$api = \AzuraCast\Api\Client::create(
+$api = \Pheme\Api\Client::create(
 	'<IP-Address | Host>',
 	'<API Key>'
 );

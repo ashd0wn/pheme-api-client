@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace AzuraCast\Api;
+namespace Pheme\Api;
 
-use AzuraCast\Api\Dto;
+use Pheme\Api\Dto;
 use GuzzleHttp\Psr7\Uri;
 
 class Client extends AbstractClient

@@ -3,13 +3,13 @@ declare(strict_types=1);
 
 namespace AzuraCast\Api;
 
-use AzuraCast\Api\Dto\UploadFileDto;
-use AzuraCast\Api\Exception\ClientRequestException;
+use Pheme\Api\Dto\UploadFileDto;
+use Pheme\Api\Exception\ClientRequestException;
 use Dotenv\Dotenv;
 use Faker\Factory as Faker;
 use PHPUnit\Framework\TestCase;
 
-class AzuraCastApiClientTest extends TestCase
+class PhemeApiClientTest extends TestCase
 {
     /**
      * @return void
