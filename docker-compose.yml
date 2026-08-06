@@ -5,7 +5,7 @@ services:
     volumes:
       - ./:/var/app/www
     environment:
-      AZURACAST_HOST: "${AZURACAST_HOST:-https://demo.azuracast.com/}"
-      AZURACAST_API_KEY: "${AZURACAST_API_KEY:-}"
+      PHEME_HOST: "${PHEME_HOST:-https://demo.azuracast.com/}"
+      PHEME_API_KEY: "${PHEME_API_KEY:-}"
       AZURACAST_STATION_ID: "${AZURACAST_STATION_ID:-1}"
     command: composer test
