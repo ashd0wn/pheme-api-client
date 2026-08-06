@@ -1,4 +1,4 @@
-This PHP library provides an API client for the [AzuraCast](https://github.com/AzuraCast/AzuraCast) JSON API.
+This PHP library provides an API client for the Pheme radio platform API.
 
 # Installation
 

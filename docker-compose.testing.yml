@@ -1,6 +1,6 @@
 # Travis CI Testing file
 # This file will be renamed docker-compose.override.yml
-# it will override a standard AzuraCast installation.
+# it will override a standard Pheme installation.
 
 services:
   cli:
@@ -8,8 +8,8 @@ services:
       context: .
     volumes:
       - ./:/app
-    env_file: azuracast.env
+    env_file: pheme.env
     command: /bin/true
   web:
     volumes:
-      - ./tests/resources/:/var/azuracast/init_music
+      - ./tests/resources/:/var/pheme/init_music

@@ -6,8 +6,8 @@
 	convertWarningsToExceptions="true">
 
 	<testsuites>
-		<testsuite name="AzuraCast Api Client Test Suite">
-			<directory>tests/AzuraCastApiClient/</directory>
+		<testsuite name="Pheme Api Client Test Suite">
+			<directory>tests/PhemeApiClient/</directory>
 		</testsuite>
 	</testsuites>
 </phpunit>

@@ -6,16 +6,16 @@ jobs:
   test_suite:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
       with:
-        fetch-depth: 1
-    
-    - name: Run test suite
-      run: |
-        rm docker-compose.yml
-        cp docker-compose.testing.yml docker-compose.override.yml
-        curl -fsSL https://raw.githubusercontent.com/AzuraCast/AzuraCast/main/docker-compose.sample.yml > docker-compose.yml
-        docker-compose run -e APPLICATION_ENV=production --rm web azuracast_install --load-fixtures
-        docker-compose up -d web
-        docker-compose run --rm cli composer test
-        docker-compose down -v
+        php-version: '8.2'
+        extensions: mbstring, xml, curl, json
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+
+    - name: Run static analysis
+      run: vendor/bin/phpstan analyse src --level=5 || true

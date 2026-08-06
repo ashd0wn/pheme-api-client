@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace AzuraCast\Api;
+namespace Pheme\Api;
 
 use Pheme\Api\Dto\UploadFileDto;
 use Pheme\Api\Exception\ClientRequestException;
@@ -16,7 +16,7 @@ class PhemeApiClientTest extends TestCase
      */
     public static function setUpBeforeClass(): void
     {
-        if (!isset($_ENV['AZURACAST_HOST'])) {
+        if (!isset($_ENV['PHEME_HOST'])) {
             $dotenv = Dotenv::createImmutable(__DIR__ . '/../..');
             $dotenv->load();
         }
@@ -547,13 +547,13 @@ class PhemeApiClientTest extends TestCase
      */
     private function getHost(): string
     {
-        $azuracastHost = $_ENV['AZURACAST_HOST'];
+        $phemeHost = $_ENV['PHEME_HOST'];
 
-        if ($azuracastHost === false) {
+        if ($phemeHost === false) {
             return '';
         }
 
-        return $azuracastHost;
+        return $phemeHost;
     }
 
     /**
@@ -561,13 +561,13 @@ class PhemeApiClientTest extends TestCase
      */
     private function getApiKey(): string
     {
-        $azuracastApiKey = $_ENV['AZURACAST_API_KEY'];
+        $phemeApiKey = $_ENV['PHEME_API_KEY'];
 
-        if ($azuracastApiKey === false) {
+        if ($phemeApiKey === false) {
             return '';
         }
 
-        return $azuracastApiKey;
+        return $phemeApiKey;
     }
 
     /**
@@ -575,12 +575,12 @@ class PhemeApiClientTest extends TestCase
      */
     private function getStationId(): int
     {
-        $azuracastStationId = $_ENV['AZURACAST_STATION_ID'];
+        $phemeStationId = $_ENV['PHEME_STATION_ID'];
 
-        if ($azuracastStationId === false) {
+        if ($phemeStationId === false) {
             return 1;
         }
 
-        return (int)$azuracastStationId;
+        return (int)$phemeStationId;
     }
 }
