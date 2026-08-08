@@ -1,4 +1,4 @@
-# Travis CI Testing file
+# GitHub Actions CI Testing file
 # This file will be renamed docker-compose.override.yml
 # it will override a standard Pheme installation.
 

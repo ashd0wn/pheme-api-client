@@ -7,5 +7,5 @@ services:
     environment:
       PHEME_HOST: "${PHEME_HOST:-https://pheme.example.com/}"
       PHEME_API_KEY: "${PHEME_API_KEY:-}"
-      AZURACAST_STATION_ID: "${AZURACAST_STATION_ID:-1}"
+      PHEME_STATION_ID: "${PHEME_STATION_ID:-1}"
     command: composer test
